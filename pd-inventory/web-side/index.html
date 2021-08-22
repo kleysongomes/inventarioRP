@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- css connect-->
         <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="jquery-ui.css" />        
     </head>
 
     <body>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="jquery.js"></script>
-
+        
         <div class="ui">
             <div class="inventory">
                 <div id="info-div">
-                    <div id="info-identity"></div>
+                    <div id="info-identity">
+                    </div>
                     <div id="ply-id">
                         <strong>none</strong>
                         <span>0.0kg / 0.0kg</span>
@@ -34,7 +33,7 @@
                         <div class="control" id="use">Usar</div>
                         <div class="control" id="send">Enviar</div>
                         <br /><br />
-                        <div class="control" id="close" style="background: rgba(150,0,0,0.35);" onclick="$.post('http://pd-inventory/NUIFocusOff')">
+                        <div class="control" id="close" onclick="$.post('http://pd-inventory/NUIFocusOff')">
                             Fechar
                         </div>
                     </div>
@@ -55,5 +54,11 @@
                 </div>
             </div>
         </div>
+
+        <!--scripts js-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jquery.js"></script>
+
     </body>
 </html>

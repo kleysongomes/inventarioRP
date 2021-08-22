@@ -71,10 +71,10 @@ function openShop(shop)
 
     local data2 = vrpServer.loadShop(shop)
 
-    SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+    SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
     SendNUIMessage({ action = "setItems", itemList = data })
 
-    SendNUIMessage({ action = "setSecondText", text = 'shop-' .. shop })
+    SendNUIMessage({ action = "setSecondText", text = 'Estoque: ' .. shop })
     SendNUIMessage({ action = "setSecondItems", itemSList = data2 })
 end
 
@@ -88,9 +88,9 @@ function sellShop(shop)
 
     local data2 = vrpServer.loadShop(shop)
 
-    SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+    SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
     SendNUIMessage({ action = "setItems", itemList = data })
 
-    SendNUIMessage({ action = "setSecondText", text = 'shop-' .. shop })
+    SendNUIMessage({ action = "setSecondText", text = 'Estoque: ' .. shop })
     SendNUIMessage({ action = "setSecondItems", itemSList = data2 })
 end

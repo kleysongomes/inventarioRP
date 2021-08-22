@@ -14,7 +14,7 @@ function openTrunk()
             SendNUIMessage({ action = "display", type = "trunk" })
             SetNuiFocus(true, true)
             
-            SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+            SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
             SendNUIMessage({ action = "setItems", itemList = data })
             
             SendNUIMessage({ action = "setSecondText", text = 'trunk-' .. placa, weight = weight2, max = max2 })

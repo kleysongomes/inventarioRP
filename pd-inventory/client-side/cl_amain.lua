@@ -80,10 +80,10 @@ function openInventory()
     TriggerEvent("vrp_sound:source","zipperopen",0.1)
     
     openIdentity()
-    SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+    SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
     SendNUIMessage({ action = "setItems", itemList = data })
     
-    SendNUIMessage({ action = "setSecondText", text = 'drop-' .. gridZone })
+    SendNUIMessage({ action = "setSecondText", text = 'Dropando item na Zona: ' .. gridZone })
     SendNUIMessage({ action = "setSecondItems", itemSList = drop })
     
     isInInventory = true
@@ -99,7 +99,7 @@ end
 function updateDrop()
     local _,_,drop = vrpServer.getInv(gridZone)
 
-    SendNUIMessage({ action = "setSecondText", text = 'drop-' .. gridZone })
+    SendNUIMessage({ action = "setSecondText", text = 'Dropando item na Zona: ' .. gridZone })
     SendNUIMessage({ action = "setSecondItems", itemSList = drop })
 end
 
@@ -117,7 +117,7 @@ function updateInventory()
     local weight,data,_,max = vrpServer.getInv(gridZone)
     
     openIdentity()
-    SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+    SendNUIMessage({ action = "setText", text = 'Sua Mochila ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
     SendNUIMessage({ action = "setItems", itemList = data })
 end
 

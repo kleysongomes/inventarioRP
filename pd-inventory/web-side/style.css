@@ -95,18 +95,19 @@
     float: left;
     padding: 0.3% 0.2%;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: url("images/imgTeste.jpg");
+    background-color: rgba(21, 43, 240, 0.438);
+    border: 1px solid rgba(21, 43, 240, 0.438);
 
     position: absolute; 
     left: 0.1%; 
     top: -25%;
-    border-right: 4px solid rgba(94, 158, 214, 0.45);
+    border-right: 4px solid rgba(21, 43, 240, 0.438);
 }
 
 #info-identity b {
     text-shadow: none;
-    color: rgba(94, 158, 214);
+    color: rgba(255, 209, 5, 0.795);
 }
 
 #divider {
@@ -139,15 +140,28 @@ input[type='number'] {
     float: left;
     width: 117px;
     height: 127px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(22, 78, 233, 0.062);
     margin: 2px;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(22, 78, 233, 0.062);
 }
 
 .slot:hover,
 .slotOther:hover {
     opacity: 0.8;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.control:hover{
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    margin: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    border-radius: 10px;
 }
 
 .item,
@@ -170,6 +184,7 @@ input[type='number'] {
     z-index: 500;
     font-size: 12px;
     background-color: rgba(5, 5, 5, 0.35);
+    border-radius: 10px;
 }
 
 .ui-draggable-dragging .item-name,
@@ -196,18 +211,19 @@ input[type='number'] {
 .controls-div {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%, -50%);
 }
 
 .control {
-    width: 150px;
+    width: 100px;
     height: 40px;
-    background-color: rgba(5, 5, 5, 0.35);
+    background-color: rgba(57, 69, 235, 0.35);
     margin: 2px;
     text-align: center;
     vertical-align: middle;
     line-height: 40px;
+    border-radius: 10px;
 }
 
 .control.disabled {
@@ -241,7 +257,7 @@ input[type='number'] {
 
 #playerInventory::-webkit-scrollbar-thumb,
 #otherInventory::-webkit-scrollbar-thumb {
-    background-color: rgba(94, 158, 214, 0.45);
+    background-color: rgba(21, 43, 240, 0.438);
     border-radius: 3px;
 }
 
@@ -268,6 +284,8 @@ input[type='number'] {
     .slotOther {
         width: 100px;
         height: 110px;
+        border-radius: 10px;
+        
     }
 
     .item-count {

@@ -23,7 +23,7 @@ function openVault()
 		SendNUIMessage({ action = "display", type = "vault" })
 		SetNuiFocus(true, true)
 		
-		SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+		SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
 		SendNUIMessage({ action = "setItems", itemList = data })
 		
 		SendNUIMessage({ action = "setSecondText", text = 'vault-' .. currentVault, weight = weight2, max = cfg.homesChests[currentVault].max })
@@ -37,7 +37,7 @@ function updateVault()
 
 	SendNUIMessage({ action = "display", type = "vault" })
 
-	SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+	SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
 	SendNUIMessage({ action = "setItems", itemList = data })
 	
 	SendNUIMessage({ action = "setSecondText", text = 'vault-' .. currentVault, weight = weight2, max = cfg.homesChests[currentVault].max })

@@ -23,7 +23,7 @@ function openChest()
 		SendNUIMessage({ action = "display", type = "chest" })
 		SetNuiFocus(true, true)
 		
-		SendNUIMessage({ action = "setText", text = 'ply-' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
+		SendNUIMessage({ action = "setText", text = 'Sua Mochila - ID: ' .. GetPlayerServerId(PlayerId()), weight = weight, max = max })
 		SendNUIMessage({ action = "setItems", itemList = data })
 		
 		SendNUIMessage({ action = "setSecondText", text = 'chest-' .. currentChest, weight = weight2, max = cfg.staticChests[currentChest].max })
